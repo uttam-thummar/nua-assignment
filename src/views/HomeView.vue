@@ -1,9 +1,18 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<script>
+import { defineComponent } from "vue";
+import CountryInformationExplorer from '../components/CountryInformationExplorer.vue';
+
+export default defineComponent({
+  components: {
+    CountryInformationExplorer
+  }
+});
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <CountryInformationExplorer />
+  </div>
 </template>
+
+<style scoped></style>
